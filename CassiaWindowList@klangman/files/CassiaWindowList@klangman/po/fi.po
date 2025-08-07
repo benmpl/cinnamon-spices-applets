@@ -7,42 +7,46 @@ msgstr ""
 "Project-Id-Version: CassiaWindowList@klangman 2.1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-applets/"
 "issues\n"
-"POT-Creation-Date: 2024-12-06 20:39-0500\n"
-"PO-Revision-Date: 2024-11-21 00:50+0200\n"
+"POT-Creation-Date: 2025-07-05 00:09-0400\n"
+"PO-Revision-Date: 2025-04-02 23:10+0300\n"
 "Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>\n"
 "Language-Team: \n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 3.4.2\n"
 
-#. 4.0/applet.js:584 6.0/applet.js:584 6.4/applet.js:562
+#. 4.0/applet.js:611 6.0/applet.js:611 6.4/applet.js:589
 msgid "all buttons"
 msgstr "kaikki painikkeet"
 
-#. 4.0/applet.js:3277 6.0/applet.js:3277 6.4/applet.js:3249
+#. 4.0/applet.js:1955 6.0/applet.js:1955 6.4/applet.js:1933
+msgid "windows in this group"
+msgstr ""
+
+#. 4.0/applet.js:3341 6.0/applet.js:3341 6.4/applet.js:3313
 msgid "Applet Preferences"
 msgstr "Sovelman asetukset"
 
-#. 4.0/applet.js:3281 6.0/applet.js:3281 6.4/applet.js:3253
+#. 4.0/applet.js:3345 6.0/applet.js:3345 6.4/applet.js:3317
 msgid "About..."
 msgstr "Tietoja..."
 
-#. 4.0/applet.js:3285 6.0/applet.js:3285 6.4/applet.js:3257
+#. 4.0/applet.js:3349 6.0/applet.js:3349 6.4/applet.js:3321
 msgid "Configure..."
 msgstr "Aseta..."
 
-#. 4.0/applet.js:3289 6.0/applet.js:3289 6.4/applet.js:3261
+#. 4.0/applet.js:3353 6.0/applet.js:3353 6.4/applet.js:3325
 msgid "Website"
 msgstr "Verkkosivu"
 
-#. 4.0/applet.js:3293 6.0/applet.js:3293 6.4/applet.js:3265
+#. 4.0/applet.js:3357 6.0/applet.js:3357 6.4/applet.js:3329
 #, javascript-format
 msgid "Remove '%s'"
 msgstr "Poista \"%s\""
 
-#. 4.0/applet.js:3295 6.0/applet.js:3295 6.4/applet.js:3267
+#. 4.0/applet.js:3359 6.0/applet.js:3359 6.4/applet.js:3331
 msgid "Do you really want to remove this instance of CassiaWindowList?"
 msgstr "Haluatko tosiaan poistaa tämän mahdollisuuden Cassiaikkunalistasta?"
 
@@ -64,76 +68,76 @@ msgstr "Haluatko tosiaan poistaa tämän mahdollisuuden Cassiaikkunalistasta?"
 #. 6.4->settings-schema.json->mouse-action-btn2->options
 #. 6.4->settings-schema.json->mouse-action-btn8->options
 #. 6.4->settings-schema.json->mouse-action-btn9->options
-#. 4.0/applet.js:3304 6.0/applet.js:3304 6.4/applet.js:3276
+#. 4.0/applet.js:3368 6.0/applet.js:3368 6.4/applet.js:3340
 msgid "Open new window"
 msgstr "Avaa uusi ikkuna"
 
-#. 4.0/applet.js:3312 6.0/applet.js:3312 6.4/applet.js:3284
+#. 4.0/applet.js:3376 6.0/applet.js:3376 6.4/applet.js:3348
 msgid "Remove from panel"
 msgstr "Poista paneelista"
 
-#. 4.0/applet.js:3314 6.0/applet.js:3314 6.4/applet.js:3286
+#. 4.0/applet.js:3378 6.0/applet.js:3378 6.4/applet.js:3350
 msgid "Remove from this workspace"
 msgstr "Poista tästä työtilasta"
 
-#. 4.0/applet.js:3320 6.0/applet.js:3320 6.4/applet.js:3292
+#. 4.0/applet.js:3384 6.0/applet.js:3384 6.4/applet.js:3356
 msgid "Pin to panel"
 msgstr "Kiinnitä paneeliin"
 
-#. 4.0/applet.js:3322 6.0/applet.js:3322 6.4/applet.js:3294
+#. 4.0/applet.js:3386 6.0/applet.js:3386 6.4/applet.js:3358
 msgid "Pin to this workspace"
 msgstr "Kiinnitä työtilaan"
 
-#. 4.0/applet.js:3363 6.0/applet.js:3363 6.4/applet.js:3335
+#. 4.0/applet.js:3427 6.0/applet.js:3427 6.4/applet.js:3399
 msgid "Pin to other workspaces"
 msgstr "Kiinnitä toiseen työtilaan"
 
-#. 4.0/applet.js:3384 6.0/applet.js:3384 6.4/applet.js:3356
+#. 4.0/applet.js:3448 6.0/applet.js:3448 6.4/applet.js:3420
 msgid "Pin to all workspaces"
 msgstr "Kiinnitä kaikkiin työtiloihin"
 
-#. 4.0/applet.js:3402 6.0/applet.js:3402 6.4/applet.js:3374
+#. 4.0/applet.js:3466 6.0/applet.js:3466 6.4/applet.js:3438
 msgid "Pin to launcher"
 msgstr "Kiinnitä käynnistimeen"
 
-#. 4.0/applet.js:3420 4.0/applet.js:3625 6.0/applet.js:3420 6.0/applet.js:3625
-#. 6.4/applet.js:3392 6.4/applet.js:3594
+#. 4.0/applet.js:3484 4.0/applet.js:3689 6.0/applet.js:3484 6.0/applet.js:3689
+#. 6.4/applet.js:3456 6.4/applet.js:3658
 msgid "Add new Hotkey for"
 msgstr "Lisää pikanäppäin"
 
-#. 4.0/applet.js:3434 6.0/applet.js:3434 6.4/applet.js:3406
+#. 4.0/applet.js:3498 6.0/applet.js:3498 6.4/applet.js:3470
 msgid "Recent files"
 msgstr "Käytetyt tiedostot"
 
-#. 4.0/applet.js:3458 6.0/applet.js:3458 6.4/applet.js:3430
+#. 4.0/applet.js:3522 6.0/applet.js:3522 6.4/applet.js:3494
 msgid "Places"
 msgstr "Paikat"
 
-#. 4.0/applet.js:3501 6.0/applet.js:3501 6.4/applet.js:3473
+#. 4.0/applet.js:3565 6.0/applet.js:3565 6.4/applet.js:3537
 msgid "Always on top"
 msgstr "Aina päällimmäisenä"
 
-#. 4.0/applet.js:3513 6.0/applet.js:3513 6.4/applet.js:3485
+#. 4.0/applet.js:3577 6.0/applet.js:3577 6.4/applet.js:3549
 msgid "Only on this workspace"
 msgstr "Ainoastaan tämä työtila"
 
-#. 4.0/applet.js:3515 6.0/applet.js:3515 6.4/applet.js:3487
+#. 4.0/applet.js:3579 6.0/applet.js:3579 6.4/applet.js:3551
 msgid "Visible on all workspaces"
 msgstr "Näytä kaikki työtilat"
 
-#. 4.0/applet.js:3516 6.0/applet.js:3516 6.4/applet.js:3488
+#. 4.0/applet.js:3580 6.0/applet.js:3580 6.4/applet.js:3552
 msgid "Move to another workspace"
 msgstr "Siirrä toiseen työtilaan"
 
-#. 4.0/applet.js:3525 6.0/applet.js:3525 6.4/applet.js:3497
+#. 4.0/applet.js:3589 6.0/applet.js:3589 6.4/applet.js:3561
 msgid " (this workspace)"
 msgstr " (tämä työtila)"
 
-#. 4.0/applet.js:3538 6.0/applet.js:3538 6.4/applet.js:3510
+#. 4.0/applet.js:3602 6.0/applet.js:3602 6.4/applet.js:3574
 msgid "Move to another monitor"
 msgstr "Siirrä toiseen näyttöön"
 
-#. 4.0/applet.js:3546 6.0/applet.js:3546 6.4/applet.js:3518
+#. 4.0/applet.js:3610 6.0/applet.js:3610 6.4/applet.js:3582
 msgid "Monitor"
 msgstr "Näyttö"
 
@@ -155,48 +159,48 @@ msgstr "Näyttö"
 #. 6.4->settings-schema.json->mouse-action-btn2->options
 #. 6.4->settings-schema.json->mouse-action-btn8->options
 #. 6.4->settings-schema.json->mouse-action-btn9->options
-#. 4.0/applet.js:3563 6.0/applet.js:3563 6.4/applet.js:3532
+#. 4.0/applet.js:3627 6.0/applet.js:3627 6.4/applet.js:3596
 msgid "Move window here"
 msgstr "Siirrä ikkuna tähän"
 
-#. 4.0/applet.js:3580 6.0/applet.js:3580 6.4/applet.js:3549
+#. 4.0/applet.js:3644 6.0/applet.js:3644 6.4/applet.js:3613
 msgid "unassigned"
 msgstr "ei allekirjoitettu"
 
-#. 4.0/applet.js:3591 4.0/applet.js:3622 6.0/applet.js:3591 6.0/applet.js:3622
-#. 6.4/applet.js:3560 6.4/applet.js:3591
+#. 4.0/applet.js:3655 4.0/applet.js:3686 6.0/applet.js:3655 6.0/applet.js:3686
+#. 6.4/applet.js:3624 6.4/applet.js:3655
 msgid "Assign window to a hotkey"
 msgstr "Määritä ikkuna pikanäppäimelle"
 
-#. 4.0/applet.js:3645 6.0/applet.js:3645 6.4/applet.js:3614
+#. 4.0/applet.js:3709 6.0/applet.js:3709 6.4/applet.js:3678
 msgid "Change application label contents"
 msgstr "Muuta sovelluksen merkin sisältöä"
 
-#. 4.0/applet.js:3648 6.0/applet.js:3648 6.4/applet.js:3617
+#. 4.0/applet.js:3712 6.0/applet.js:3712 6.4/applet.js:3681
 msgid "Remove custom setting"
 msgstr "Poista mukautetut aasetukset"
 
-#. 4.0/applet.js:3655 6.0/applet.js:3655 6.4/applet.js:3624
+#. 4.0/applet.js:3719 6.0/applet.js:3719 6.4/applet.js:3688
 msgid "Use window title"
 msgstr "Käytä ikkunan otsikkoa"
 
-#. 4.0/applet.js:3662 6.0/applet.js:3662 6.4/applet.js:3631
+#. 4.0/applet.js:3726 6.0/applet.js:3726 6.4/applet.js:3695
 msgid "Use application name"
 msgstr "Käytä sovelluksen nimeä"
 
-#. 4.0/applet.js:3669 6.0/applet.js:3669 6.4/applet.js:3638
+#. 4.0/applet.js:3733 6.0/applet.js:3733 6.4/applet.js:3702
 msgid "No label"
 msgstr "Ei merkkiä"
 
-#. 4.0/applet.js:3680 6.0/applet.js:3680 6.4/applet.js:3649
+#. 4.0/applet.js:3744 6.0/applet.js:3744 6.4/applet.js:3713
 msgid "Ungroup application windows"
 msgstr "Pura ikkunoiden ryhmittely"
 
-#. 4.0/applet.js:3688 6.0/applet.js:3688 6.4/applet.js:3657
+#. 4.0/applet.js:3752 6.0/applet.js:3752 6.4/applet.js:3721
 msgid "Group application windows"
 msgstr "Ryhmitä sovellusikkunat"
 
-#. 4.0/applet.js:3701 6.0/applet.js:3701 6.4/applet.js:3670
+#. 4.0/applet.js:3765 6.0/applet.js:3765 6.4/applet.js:3734
 msgid "Automatic grouping/ungrouping"
 msgstr "Automaattinen ryhmittely/purku"
 
@@ -218,39 +222,39 @@ msgstr "Automaattinen ryhmittely/purku"
 #. 6.4->settings-schema.json->mouse-action-btn2->options
 #. 6.4->settings-schema.json->mouse-action-btn8->options
 #. 6.4->settings-schema.json->mouse-action-btn9->options
-#. 4.0/applet.js:3729 6.0/applet.js:3729 6.4/applet.js:3698
+#. 4.0/applet.js:3793 6.0/applet.js:3793 6.4/applet.js:3762
 msgid "Move titlebar on to screen"
 msgstr "Siirrä otsikkorivi näytölle"
 
-#. 4.0/applet.js:3734 6.0/applet.js:3734 6.4/applet.js:3703
+#. 4.0/applet.js:3798 6.0/applet.js:3798 6.4/applet.js:3767
 msgid "Restore"
 msgstr "Palauta"
 
-#. 4.0/applet.js:3738 6.0/applet.js:3738 6.4/applet.js:3707
+#. 4.0/applet.js:3802 6.0/applet.js:3802 6.4/applet.js:3771
 msgid "Minimize"
 msgstr "Pienennä"
 
-#. 4.0/applet.js:3744 6.0/applet.js:3744 6.4/applet.js:3713
+#. 4.0/applet.js:3808 6.0/applet.js:3808 6.4/applet.js:3777
 msgid "Unmaximize"
 msgstr "Suurenna"
 
-#. 4.0/applet.js:3752 6.0/applet.js:3752 6.4/applet.js:3721
+#. 4.0/applet.js:3816 6.0/applet.js:3816 6.4/applet.js:3785
 msgid "Close others"
 msgstr "Sulje muut"
 
-#. 4.0/applet.js:3754 6.0/applet.js:3754 6.4/applet.js:3723
+#. 4.0/applet.js:3818 6.0/applet.js:3818 6.4/applet.js:3787
 msgid "Close other windows for application"
 msgstr "Sulje muut ikkunat sovellusta varten"
 
-#. 4.0/applet.js:3775 6.0/applet.js:3775 6.4/applet.js:3744
+#. 4.0/applet.js:3839 6.0/applet.js:3839 6.4/applet.js:3808
 msgid "Close all"
 msgstr "Sulje kaikki"
 
-#. 4.0/applet.js:3777 6.0/applet.js:3777 6.4/applet.js:3746
+#. 4.0/applet.js:3841 6.0/applet.js:3841 6.4/applet.js:3810
 msgid "Close all windows for application"
 msgstr "Sulje kaikki ikkunat sovellusta varten"
 
-#. 4.0/applet.js:3793 6.0/applet.js:3793 6.4/applet.js:3762
+#. 4.0/applet.js:3857 6.0/applet.js:3857 6.4/applet.js:3826
 msgid "Close"
 msgstr "Sulje"
 
@@ -317,8 +321,16 @@ msgstr "Ikkunalistna painikkeen asetukset"
 #. 4.0->settings-schema.json->caption-number-settings->title
 #. 6.0->settings-schema.json->caption-number-settings->title
 #. 6.4->settings-schema.json->caption-number-settings->title
-msgid "Number label settings"
+#, fuzzy
+msgid "Icon overlay label settings"
 msgstr "Numero merkin asetukset"
+
+#. 4.0->settings-schema.json->caption-progress-settings->title
+#. 6.0->settings-schema.json->caption-progress-settings->title
+#. 6.4->settings-schema.json->caption-progress-settings->title
+#, fuzzy
+msgid "Progress settings"
+msgstr "Pikanäppäimien asetukset"
 
 #. 4.0->settings-schema.json->general-settings->title
 #. 6.0->settings-schema.json->general-settings->title
@@ -394,13 +406,10 @@ msgstr "Koskaan"
 
 #. 4.0->settings-schema.json->display-caption-for->options
 #. 4.0->settings-schema.json->display-caption-for-pined->options
-#. 4.0->settings-schema.json->display-number->options
 #. 6.0->settings-schema.json->display-caption-for->options
 #. 6.0->settings-schema.json->display-caption-for-pined->options
-#. 6.0->settings-schema.json->display-number->options
 #. 6.4->settings-schema.json->display-caption-for->options
 #. 6.4->settings-schema.json->display-caption-for-pined->options
-#. 6.4->settings-schema.json->display-number->options
 msgid "Always"
 msgstr "Aina"
 
@@ -456,10 +465,11 @@ msgstr "Näytä tarrat kiinnitetyissä painikkeissa"
 #. 4.0->settings-schema.json->display-caption-for-pined->tooltip
 #. 6.0->settings-schema.json->display-caption-for-pined->tooltip
 #. 6.4->settings-schema.json->display-caption-for-pined->tooltip
+#, fuzzy
 msgid ""
 "Never: No pinned windows will have a label\n"
 "Always: All pinned windows will have labels\n"
-"Running: Only pinned window that are running will have a label\n"
+"Running: Only pinned windows that are running will have a label\n"
 "Focused: Only the pinned window with focus will have a label"
 msgstr ""
 "Ei koskaan: kiinnitetyissä ikkunoissa ei ole tunnistetta\n"
@@ -528,13 +538,34 @@ msgid "Minimized and pinned"
 msgstr "Pienennetyt ja kiinnitetyt"
 
 #. 4.0->settings-schema.json->display-indicators->options
-#. 4.0->settings-schema.json->group-windows->options
+#. 4.0->settings-schema.json->number-type->options
 #. 6.0->settings-schema.json->display-indicators->options
-#. 6.0->settings-schema.json->group-windows->options
+#. 6.0->settings-schema.json->number-type->options
 #. 6.4->settings-schema.json->display-indicators->options
-#. 6.4->settings-schema.json->group-windows->options
-msgid "Automatic"
-msgstr "Automaattinen"
+#. 6.4->settings-schema.json->number-type->options
+msgid "Application group window count"
+msgstr "Sovellusryhmän ikkunoiden määrä"
+
+#. 4.0->settings-schema.json->display-indicators->options
+#. 6.0->settings-schema.json->display-indicators->options
+#. 6.4->settings-schema.json->display-indicators->options
+#, fuzzy
+msgid "Application group indicator (⋮)"
+msgstr "Sovellusryhmän ikkunoiden määrä"
+
+#. 4.0->settings-schema.json->display-indicators->options
+#. 6.0->settings-schema.json->display-indicators->options
+#. 6.4->settings-schema.json->display-indicators->options
+#, fuzzy
+msgid "Workspace number (smart)"
+msgstr "Työtilan numero"
+
+#. 4.0->settings-schema.json->display-indicators->options
+#. 6.0->settings-schema.json->display-indicators->options
+#. 6.4->settings-schema.json->display-indicators->options
+#, fuzzy
+msgid "Monitor number (smart)"
+msgstr "Näytön numero"
 
 #. 4.0->settings-schema.json->display-indicators->description
 #. 6.0->settings-schema.json->display-indicators->description
@@ -546,36 +577,25 @@ msgstr "Näytä tilailmaisimet"
 #. 6.0->settings-schema.json->display-indicators->tooltip
 #. 6.4->settings-schema.json->display-indicators->tooltip
 msgid ""
-"Choose if the minimized and the pinned indicator characters will be "
-"prepended to button label text. Buttons without a text label will not "
-"reserve as much space.\n"
-"Automatic: The minimized and pinned indicators will only show when space is "
-"not constrained."
+"Controls what information is prepended to the button label text. On "
+"horizontal panels this data is shown even when the primary label contents "
+"are removed. Setting this to None will allow for the smallest button size. "
+"When on vertical panels this setting is ignored."
 msgstr ""
-"Valitse, lisätäänkö pienennetyt ja kiinnitetyt ilmaisinmerkit painikkeen "
-"otsikon tekstiin. Painikkeet ilman tekstitunnistetta eivät varaa yhtä paljon "
-"tilaa.\n"
-"Automaattinen: Pienennetyt ja kiinnitetyt ilmaisimet näkyvät vain, kun tilaa "
-"ei ole rajoitettu."
 
-#. 4.0->settings-schema.json->show-ellipsis-for-groups->description
-#. 6.0->settings-schema.json->show-ellipsis-for-groups->description
-#. 6.4->settings-schema.json->show-ellipsis-for-groups->description
-msgid "Show a vertical ellipsis (...) for grouped buttons"
-msgstr "Näytä pystysuora ellipsi (...) ryhmitetyille painikkeille"
+#. 4.0->settings-schema.json->auto-hide-indicators->description
+#. 6.0->settings-schema.json->auto-hide-indicators->description
+#. 6.4->settings-schema.json->auto-hide-indicators->description
+msgid "Hide status indicators when space is limited"
+msgstr ""
 
-#. 4.0->settings-schema.json->show-ellipsis-for-groups->tooltip
-#. 6.0->settings-schema.json->show-ellipsis-for-groups->tooltip
-#. 6.4->settings-schema.json->show-ellipsis-for-groups->tooltip
+#. 4.0->settings-schema.json->auto-hide-indicators->tooltip
+#. 6.0->settings-schema.json->auto-hide-indicators->tooltip
+#. 6.4->settings-schema.json->auto-hide-indicators->tooltip
 msgid ""
-"Prepend a vertical ellipsis unicode charter to the labels for grouped window-"
-"list buttons with more then one window. When on a vertical panel this option "
-"is not possible and the setting will be ignored."
+"Hide status indicators when window list space is limited causing button "
+"labels to shrink"
 msgstr ""
-"Liitä pystysuora ellipsinen unicode-kirjaus ryhmiteltyjen "
-"ikkunaluettelopainikkeiden, joissa on useampi kuin yksi ikkuna, tarrojen "
-"eteen. Pystypaneelissa tämä vaihtoehto ei ole mahdollinen ja asetus jätetään "
-"huomioimatta."
 
 #. 4.0->settings-schema.json->trailing-pinned-behaviour->description
 #. 6.0->settings-schema.json->trailing-pinned-behaviour->description
@@ -641,9 +661,10 @@ msgstr "Osoitinaika ennen täysikokoisen ikkunan esikatselun näyttämistä"
 #. 4.0->settings-schema.json->hover-peek-delay->tooltip
 #. 6.0->settings-schema.json->hover-peek-delay->tooltip
 #. 6.4->settings-schema.json->hover-peek-delay->tooltip
+#, fuzzy
 msgid ""
 "This defines the mouse hover time before a full size window preview will "
-"appear. It applies when hovering over either window-list buttons or "
+"appear. It applies when hovering over either window list buttons or "
 "thumbnail menu items (of course one of the full size window preview options "
 "must be enabled for this option to have any effect)"
 msgstr ""
@@ -695,7 +716,8 @@ msgstr "Tyhjää"
 #. 4.0->settings-schema.json->number-type->options
 #. 6.0->settings-schema.json->number-type->options
 #. 6.4->settings-schema.json->number-type->options
-msgid "Application group window count"
+#, fuzzy
+msgid "Application group indicator (…)"
 msgstr "Sovellusryhmän ikkunoiden määrä"
 
 #. 4.0->settings-schema.json->number-type->options
@@ -710,67 +732,98 @@ msgstr "Työtilan numero"
 msgid "Monitor number"
 msgstr "Näytön numero"
 
+#. 4.0->settings-schema.json->number-type->options
+#. 6.0->settings-schema.json->number-type->options
+#. 6.4->settings-schema.json->number-type->options
+msgid "Two characters from the window title"
+msgstr ""
+
+#. 4.0->settings-schema.json->number-type->options
+#. 6.0->settings-schema.json->number-type->options
+#. 6.4->settings-schema.json->number-type->options
+#, fuzzy
+msgid "Minimized indicator"
+msgstr "Pienennetyt ikkunat"
+
+#. 4.0->settings-schema.json->number-type->options
+#. 6.0->settings-schema.json->number-type->options
+#. 6.4->settings-schema.json->number-type->options
+#, fuzzy
+msgid "Pinned indicator"
+msgstr "Kiinnitetyt sovellukset"
+
+#. 4.0->settings-schema.json->number-type->options
+#. 6.0->settings-schema.json->number-type->options
+#. 6.4->settings-schema.json->number-type->options
+#, fuzzy
+msgid "Minimized and pinned indicators"
+msgstr "Pienennetyt ja kiinnitetyt"
+
 #. 4.0->settings-schema.json->number-type->description
 #. 6.0->settings-schema.json->number-type->description
 #. 6.4->settings-schema.json->number-type->description
-msgid "Number label contents"
+#, fuzzy
+msgid "Icon overlay label contents"
 msgstr "Numerotunnisteen sisältö"
-
-#. 4.0->settings-schema.json->display-number->options
-#. 6.0->settings-schema.json->display-number->options
-#. 6.4->settings-schema.json->display-number->options
-msgid "Smart"
-msgstr "Fiksu"
 
 #. 4.0->settings-schema.json->display-number->description
 #. 6.0->settings-schema.json->display-number->description
 #. 6.4->settings-schema.json->display-number->description
-msgid "Display number"
-msgstr "Näytettävä numero"
+msgid "Only display label when needed"
+msgstr ""
 
 #. 4.0->settings-schema.json->display-number->tooltip
 #. 6.0->settings-schema.json->display-number->tooltip
 #. 6.4->settings-schema.json->display-number->tooltip
+#, fuzzy
 msgid ""
-"Controls when the number label is used. Smart means the the label will only "
-"appear when it is appropriate depending on the number label contents setting "
-"above. i.e. When there is two or more windows in a group, or when the "
-"windows workspace or monitor does not match the current one."
+"With this option enabled, the icon overlay label will only appear when it is "
+"appropriate depending on the label content (i.e. When there are two or more "
+"windows in a group, or when the windows workspace or monitor does not match "
+"the current one). When this option is disabled the label is always shown"
 msgstr ""
 "Ohjaa, milloin numerotarraa käytetään. Älykäs tarkoittaa, että tarra tulee "
 "näkyviin vain silloin, kun se on tarkoituksenmukaista yllä olevan "
 "numerotarran sisältöasetuksen mukaan. eli kun ryhmässä on kaksi tai useampia "
 "ikkunoita tai kun Windowsin työtila tai näyttö ei vastaa nykyistä."
 
-#. 4.0->settings-schema.json->number-style->options
-#. 6.0->settings-schema.json->number-style->options
-#. 6.4->settings-schema.json->number-style->options
-msgid "Icon overlay"
+#. 4.0->settings-schema.json->progress-display-type->options
+#. 4.0->settings-schema.json->display-pinned->options
+#. 6.0->settings-schema.json->progress-display-type->options
+#. 6.0->settings-schema.json->display-pinned->options
+#. 6.4->settings-schema.json->progress-display-type->options
+#. 6.4->settings-schema.json->display-pinned->options
+msgid "Disabled"
+msgstr "Poissa käytöstä"
+
+#. 4.0->settings-schema.json->progress-display-type->options
+#. 6.0->settings-schema.json->progress-display-type->options
+#. 6.4->settings-schema.json->progress-display-type->options
+#, fuzzy
+msgid "Using icon overlay label"
 msgstr "Kuvakkeen peittokuva"
 
-#. 4.0->settings-schema.json->number-style->options
-#. 6.0->settings-schema.json->number-style->options
-#. 6.4->settings-schema.json->number-style->options
-msgid "Label prepend"
-msgstr "Tunnisteen edelle"
-
-#. 4.0->settings-schema.json->number-style->description
-#. 6.0->settings-schema.json->number-style->description
-#. 6.4->settings-schema.json->number-style->description
-msgid "Number style"
-msgstr "Numeron tyyli"
-
-#. 4.0->settings-schema.json->number-style->tooltip
-#. 6.0->settings-schema.json->number-style->tooltip
-#. 6.4->settings-schema.json->number-style->tooltip
-msgid ""
-"Controls how the number label is presented. When on a vertical panel or when "
-"in launcher mode, the \"label prepend\" option is not possible so \"icon "
-"overlay\" will be used instead"
+#. 4.0->settings-schema.json->progress-display-type->options
+#. 6.0->settings-schema.json->progress-display-type->options
+#. 6.4->settings-schema.json->progress-display-type->options
+msgid "Prepended to button label"
 msgstr ""
-"Ohjaa numerotunnisteen esittämistä. Pystypaneelissa tai käynnistystilassa "
-"\"tarran alkuun\" -vaihtoehto ei ole mahdollista, joten sen sijaan käytetään "
-"\"kuvakepeittokuvaa\""
+
+#. 4.0->settings-schema.json->progress-display-type->description
+#. 6.0->settings-schema.json->progress-display-type->description
+#. 6.4->settings-schema.json->progress-display-type->description
+msgid "Display window progress information (%)"
+msgstr ""
+
+#. 4.0->settings-schema.json->progress-display-type->tooltip
+#. 6.0->settings-schema.json->progress-display-type->tooltip
+#. 6.4->settings-schema.json->progress-display-type->tooltip
+msgid ""
+"Controls how a windows progress information is presented on the window list "
+"(i.e copying in File Manager, downloading in Firefox, updating in Update "
+"Manager, etc.). When on vertical panels the \"Prepended to button label\" "
+"option will be ignored and icon overlay will be used in its place."
+msgstr ""
 
 #. 4.0->settings-schema.json->group-windows->options
 #. 6.0->settings-schema.json->group-windows->options
@@ -783,6 +836,12 @@ msgstr "Ryhmitelty"
 #. 6.4->settings-schema.json->group-windows->options
 msgid "Pooled"
 msgstr "Yhdistetty"
+
+#. 4.0->settings-schema.json->group-windows->options
+#. 6.0->settings-schema.json->group-windows->options
+#. 6.4->settings-schema.json->group-windows->options
+msgid "Automatic"
+msgstr "Automaattinen"
 
 #. 4.0->settings-schema.json->group-windows->options
 #. 6.0->settings-schema.json->group-windows->options
@@ -805,12 +864,13 @@ msgstr "Ikkunaluettelon käyttäytymistyyli"
 #. 4.0->settings-schema.json->group-windows->tooltip
 #. 6.0->settings-schema.json->group-windows->tooltip
 #. 6.4->settings-schema.json->group-windows->tooltip
+#, fuzzy
 msgid ""
 "Grouped: All windows for an application are managed by one button,\n"
 "Pooled: All window list buttons for an application are pooled side by side,\n"
 "Automatic: Windows are pooled, and then grouped when space is limited,\n"
 "One to one: Each window gets their own button with no forced ordering,\n"
-"Launcher: Only pinned button are shown, behaves like a panel launcher."
+"Launcher: Only pinned buttons are shown, behaves like a panel launcher."
 msgstr ""
 "Ryhmitetty: Kaikkia sovelluksen ikkunoita hallitaan yhdellä painikkeella,\n"
 "Pooled: Kaikki sovelluksen ikkunaluettelopainikkeet on yhdistetty "
@@ -821,12 +881,6 @@ msgstr ""
 "järjestystä,\n"
 "Käynnistysohjelma: Vain kiinnitetty painike näytetään, se toimii kuin "
 "paneelikäynnistin."
-
-#. 4.0->settings-schema.json->display-pinned->options
-#. 6.0->settings-schema.json->display-pinned->options
-#. 6.4->settings-schema.json->display-pinned->options
-msgid "Disabled"
-msgstr "Poissa käytöstä"
 
 #. 4.0->settings-schema.json->display-pinned->options
 #. 6.0->settings-schema.json->display-pinned->options
@@ -857,8 +911,9 @@ msgid ""
 msgstr ""
 "Määrittää, voidaanko ikkunaluettelon painikkeita kiinnittää ja onko "
 "jokaisessa työtilassa yksilöllinen joukko kiinnitettyjä painikkeita vai yksi "
-"yhteinen ryhmä, joka jaetaan kaikille työtileille. \"Yleinen työtiloissa\" -"
-"tilassa kiinnitettyjen painikkeiden järjestys säilyy myös työtilojen välillä."
+"yhteinen ryhmä, joka jaetaan kaikille työtileille. \"Yleinen työtiloissa\" "
+"-tilassa kiinnitettyjen painikkeiden järjestys säilyy myös työtilojen "
+"välillä."
 
 #. 4.0->settings-schema.json->synchronize-pinned->description
 #. 6.0->settings-schema.json->synchronize-pinned->description
@@ -869,9 +924,10 @@ msgstr "Synkronoi käynnistyspainikkeet kaikissa työtiloissa"
 #. 4.0->settings-schema.json->synchronize-pinned->tooltip
 #. 6.0->settings-schema.json->synchronize-pinned->tooltip
 #. 6.4->settings-schema.json->synchronize-pinned->tooltip
+#, fuzzy
 msgid ""
 "If enabled, the number and order of launcher buttons on the panel will be "
-"synchronize across all workspaces."
+"synchronized across all workspaces."
 msgstr ""
 "Jos tämä on käytössä, paneelin käynnistyspainikkeiden lukumäärä ja järjestys "
 "synkronoidaan kaikissa työtiloissa."
@@ -918,17 +974,16 @@ msgstr ""
 #. 6.0->settings-schema.json->hide-panel-apps->description
 #. 6.4->settings-schema.json->hide-panel-apps->description
 msgid ""
-"Hide window buttons of pinned buttons on other CassiaWindowList instances"
-msgstr ""
-"Piilota kiinnitettyjen painikkeiden ikkunapainikkeet muissa CassiaWindowList-"
-"esiintymissä"
+"Hide buttons for applications on 'Launcher' instances of CassiaWindowList"
+msgstr "Piilota sovellusten painikkeet CassiaWindowList \"Käynnistimestä\""
 
 #. 4.0->settings-schema.json->hide-panel-apps->tooltip
 #. 6.0->settings-schema.json->hide-panel-apps->tooltip
 #. 6.4->settings-schema.json->hide-panel-apps->tooltip
 msgid ""
 "When enabled, windows for applications with pinned buttons on other "
-"instances of the CassiaWindowList applet will not show up in this window list"
+"'Launcher' mode instances of the CassiaWindowList applet will not show up in "
+"this window list"
 msgstr ""
 "Kun tämä on käytössä, ikkunat sovelluksille, joiden painikkeita on "
 "kiinnitetty CassiaWindowList-sovelman muihin esiintymiin, eivät näy tässä "
@@ -962,9 +1017,10 @@ msgstr ""
 #. 4.0->settings-schema.json->hover-peek-windowlist->tooltip
 #. 6.0->settings-schema.json->hover-peek-windowlist->tooltip
 #. 6.4->settings-schema.json->hover-peek-windowlist->tooltip
+#, fuzzy
 msgid ""
 "If enabled, a full size preview window will appear when the mouse pointer is "
-"hovering over a window-list button. The delay before the preview appears is "
+"hovering over a window list button. The delay before the preview appears is "
 "controlled by an option under the Advanced tab"
 msgstr ""
 "Jos tämä on käytössä, täysikokoinen esikatseluikkuna tulee näkyviin, kun "
@@ -980,9 +1036,10 @@ msgstr "Automaattinen tarkennuksen vaihto poistuttaessa paneelista"
 #. 4.0->settings-schema.json->no-click-activate->tooltip
 #. 6.0->settings-schema.json->no-click-activate->tooltip
 #. 6.4->settings-schema.json->no-click-activate->tooltip
+#, fuzzy
 msgid ""
-"If enabled, the current window for a window-list button will get the focus "
-"when the mouse pointer leaves the panel. Leaving the window-list with Ctrl "
+"If enabled, the current window for a window list button will get the focus "
+"when the mouse pointer leaves the panel. Leaving the window list with Ctrl "
 "or Shift held or while remaining on the panel will leave the focus "
 "unchanged. This option is typically used in conjunction with the preview "
 "hovering option above."
@@ -1072,10 +1129,11 @@ msgstr "Lajittele ryhmitetyt painikkeet valikon pikkukuvissa"
 #. 4.0->settings-schema.json->menu-sort-groups->tooltip
 #. 6.0->settings-schema.json->menu-sort-groups->tooltip
 #. 6.4->settings-schema.json->menu-sort-groups->tooltip
+#, fuzzy
 msgid ""
-"If enabled, the thumbnail menu will be sorted first by workspace and the by "
+"If enabled, the thumbnail menu will be sorted first by workspace and then by "
 "monitor number for grouped buttons. Pooled windows can not be sorted since "
-"the order is the same as the order on the window-list panel. With this "
+"the order is the same as the order on the window list panel. With this "
 "option enabled, the thumbnail menu drag-and-drop reordering feature will be "
 "disabled for grouped button thumbnail menus."
 msgstr ""
@@ -1100,9 +1158,10 @@ msgstr "Näytä pikkukuvat kaikille sovellusjoukon ikkunoille"
 #. 6.0->settings-schema.json->menu-all-windows-of-auto->tooltip
 #. 6.4->settings-schema.json->menu-all-windows-of-pool->tooltip
 #. 6.4->settings-schema.json->menu-all-windows-of-auto->tooltip
+#, fuzzy
 msgid ""
 "If enabled, a popup menu will contain all the application windows in the "
-"application pool rather then just the selected window within the application "
+"application pool rather than just the selected window within the application "
 "pool"
 msgstr ""
 "Jos tämä on käytössä, ponnahdusvalikko sisältää kaikki sovellusjoukon "
@@ -2102,7 +2161,8 @@ msgstr "Vaihda ikkunoiden asettelua"
 #. 4.0->settings-schema.json->mouse-action-scroll->options
 #. 6.0->settings-schema.json->mouse-action-scroll->options
 #. 6.4->settings-schema.json->mouse-action-scroll->options
-msgid "Cycle all window-list button windows"
+#, fuzzy
+msgid "Cycle all window list button windows"
 msgstr "Kierrä ikkunoiden painikkeet"
 
 #. 4.0->settings-schema.json->mouse-action-scroll->options
@@ -2257,10 +2317,11 @@ msgstr ""
 #. 4.0->settings-schema.json->hotkey-sequence->tooltip
 #. 6.0->settings-schema.json->hotkey-sequence->tooltip
 #. 6.4->settings-schema.json->hotkey-sequence->tooltip
+#, fuzzy
 msgid ""
 "If enabled, hotkeys ending with the \"1\" key (i.e. Alt+1) will "
 "automatically create hotkeys 1 through 9 (i.e. Alt+1 through Alt+9). The "
-"first 9 windows of the assigned application, as ordered on the window-list, "
+"first 9 windows of the assigned application, as ordered on the window list, "
 "will be activated by the 9 hotkeys."
 msgstr ""
 "Jos tämä on käytössä, pikanäppäimet, jotka päättyvät \"1\"-näppäimeen (eli "
@@ -2278,10 +2339,11 @@ msgstr ""
 #. 4.0->settings-schema.json->hotkey-grave-help->tooltip
 #. 6.0->settings-schema.json->hotkey-grave-help->tooltip
 #. 6.4->settings-schema.json->hotkey-grave-help->tooltip
+#, fuzzy
 msgid ""
 "If enabled, The hotkey modifier(s) + ` will be registered for each unique "
-"modifier set defined in the hotkey list. Using these hotkeys will temporally "
-"show a hotkey hint bubble over the button icons."
+"modifier set defined in the hotkey list. Using these hotkeys will "
+"temporarily show a hotkey hint bubble over the button icons."
 msgstr ""
 "Jos käytössä, pikanäppäinten muokkaaja(t) + ` rekisteröidään jokaiselle "
 "pikanäppäinluettelossa määritetylle yksilölliselle muokkausjoukolle. Näiden "
@@ -2402,15 +2464,11 @@ msgstr "Kuvakkeen värin saturaatio"
 #. 6.0->settings-schema.json->icon-saturation->tooltip
 #. 6.4->settings-schema.json->icon-saturation->tooltip
 msgid ""
-"Sets the color saturation for icons from 0% (grayscale) to 200%, default is "
-"100%\n"
-"This option is experimental, some icons are not currently effected by this "
-"setting"
+"Sets the color saturation for icons from 0% (grayscale) to 100%, default is "
+"100%"
 msgstr ""
-"Asettaa kuvakkeiden värikylläisyyden 0 %:sta (harmaasävy) 200 %:iin, "
-"oletusarvo on 100 %\n"
-"Tämä vaihtoehto on kokeellinen, tämä asetus ei tällä hetkellä vaikuta "
-"joihinkin kuvakkeisiin"
+"Asettaa kuvakkeiden värikylläisyyden 0%:sta (harmaasävy) 100%:iin, oletus on "
+"100%"
 
 #. 4.0->settings-schema.json->saturation-application->options
 #. 6.0->settings-schema.json->saturation-application->options
@@ -2445,7 +2503,8 @@ msgstr "Muiden näyttöjen ikkunoiden painikkeet"
 #. 4.0->settings-schema.json->saturation-application->options
 #. 6.0->settings-schema.json->saturation-application->options
 #. 6.4->settings-schema.json->saturation-application->options
-msgid "All buttons excepted focused window"
+#, fuzzy
+msgid "All buttons except the focused window"
 msgstr "Kaikki painikkeet paitsi tarkennettu ikkuna"
 
 #. 4.0->settings-schema.json->saturation-application->description
@@ -2486,9 +2545,10 @@ msgstr ""
 "Paneelin painikkeet kaikille käynnissä oleville ikkunoille."
 
 #. SetupWizard.ui:125
+#, fuzzy
 msgid ""
 "Panel Launcher (Quick launcher)\n"
-"Panel button only appear when you add items\n"
+"Panel buttons only appear when you pin items\n"
 "to the panel, no labels are shown, only icons."
 msgstr ""
 "Paneelin käynnistysohjelma (pikakäynnistin)\n"
@@ -2508,9 +2568,10 @@ msgid "How do you want your Window List to operate?"
 msgstr "Miten haluat ikkunaluettelosi toimivan?"
 
 #. SetupWizard.ui:192
+#, fuzzy
 msgid ""
 "Basic  -  Quick window access\n"
-"Every window gets it's own window list button.\n"
+"Every window gets its own window list button.\n"
 "Button labels are window titles."
 msgstr ""
 "Perus - Nopea pääsy ikkunaan\n"
@@ -2530,10 +2591,11 @@ msgstr ""
 "Painikkeiden otsikot ovat ikkunoiden otsikoita."
 
 #. SetupWizard.ui:236
+#, fuzzy
 msgid ""
 "Pooling  -  Quick access & compact\n"
-"Every window gets it's own window list button.\n"
-"Application buttons are pooled togeather.\n"
+"Every window gets its own window list button.\n"
+"Application buttons are pooled together.\n"
 "One button label per application pool.\n"
 "Button labels are application names."
 msgstr ""
@@ -2564,8 +2626,9 @@ msgid "Panel Launcher Setup"
 msgstr "Paneelin käynnistysohjelman asetukset"
 
 #. SetupWizard.ui:370
+#, fuzzy
 msgid ""
-"Unlike most Panel Launcher applets, this launcher keeps tack of \n"
+"Unlike most Panel Launcher applets, this launcher keeps track of \n"
 "running windows and uses window Thumbnail menus.\n"
 "\n"
 "You can launch additional windows by clicking the 'Back' mouse \n"
@@ -2606,8 +2669,9 @@ msgid "All done!"
 msgstr "Valmis!"
 
 #. SetupWizard.ui:508
+#, fuzzy
 msgid ""
-"There are many more options and features to explorer in the\n"
+"There are many more options and features to explore in the\n"
 "applet configurator and the window list button context menu,\n"
 "for example:\n"
 "\n"

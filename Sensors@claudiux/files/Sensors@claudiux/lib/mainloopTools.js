@@ -1,5 +1,4 @@
 const  GLib = imports.gi.GLib;
-const Mainloop = imports.mainloop;
 
 /**
  * _sourceIds
@@ -17,7 +16,7 @@ var _sourceIds = [];
  *
  */
 function timeout_add_seconds(sec, callback, params=null) {
-  let id = Mainloop.timeout_add_seconds(sec, callback, params);
+  let id = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, sec, callback);
   if (id && (_sourceIds.indexOf(id) === -1)) _sourceIds.push(id);
   return id;
 }
@@ -32,7 +31,7 @@ function timeout_add_seconds(sec, callback, params=null) {
  *
  */
 function timeout_add(ms, callback, params=null) {
-  let id = Mainloop.timeout_add_seconds(ms, callback, params);
+  let id = GLib.timeout_add(GLib.PRIORITY_DEFAULT, ms, callback);
   if (id && (_sourceIds.indexOf(id) === -1)) _sourceIds.push(id);
   return id;
 }
@@ -53,10 +52,13 @@ function setTimeout(callback, ms) {
         args = args.slice.call(arguments, 2);
     }
 
-    let id = Mainloop.timeout_add(ms, () => {
+    let id = GLib.timeout_add(GLib.PRIORITY_DEFAULT,
+      ms,
+      () => {
         callback.call(null, ...args);
         return false; // Stop repeating
-    }, null);
+      }
+    );
 
     if (id && (_sourceIds.indexOf(id) === -1)) _sourceIds.push(id);
 
@@ -71,9 +73,7 @@ function setTimeout(callback, ms) {
  */
 function clearTimeout(id) {
     if (id) {
-      Mainloop.source_remove(id);
-      const pos = _sourceIds.indexOf(id);
-      if (pos > -1) _sourceIds.splice(pos, 1);
+      source_remove(id);
     }
 }
 
@@ -94,10 +94,10 @@ function setInterval(callback, ms) {
         args = args.slice.call(arguments, 2);
     }
 
-    let id = Mainloop.timeout_add(ms, () => {
+    let id = GLib.timeout_add(GLib.PRIORITY_DEFAULT, ms, () => {
         callback.call(null, ...args);
         return true; // Repeat
-    }, null);
+    });
 
     if (id && (_sourceIds.indexOf(id) === -1)) _sourceIds.push(id);
 
@@ -112,9 +112,7 @@ function setInterval(callback, ms) {
  */
 function clearInterval(id) {
     if (id) {
-      Mainloop.source_remove(id);
-      const pos = _sourceIds.indexOf(id);
-      if (pos > -1) _sourceIds.splice(pos, 1);
+      source_remove(id);
     }
 };
 
@@ -132,16 +130,6 @@ function source_exists(id) {
   return (GLib.MainContext.default().find_source_by_id(_id) != null);
 }
 
-//~ function timeout_exists(id) {
-  //~ if (!id) return false;
-  //~ if (!id.source_id) return false;
-  //~ return (GLib.MainContext.default().find_source_by_id(id.source_id) != null);
-//~ }
-
-//~ function interval_exists(id) {
-  //~ return timeout_exists(id);
-//~ }
-
 /**
  * source_remove
  *
@@ -154,7 +142,7 @@ function source_exists(id) {
  */
 function source_remove(id, remove_from_sourceIds=true) {
   if (source_exists(id)) {
-    Mainloop.source_remove(id);
+    GLib.source_remove(id);
     if (remove_from_sourceIds) {
       const pos = _sourceIds.indexOf(id);
       if (pos > -1) _sourceIds.splice(pos, 1);
