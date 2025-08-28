@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #~ sleepDurationSeconds=$1
 sleepDurationSeconds=1
@@ -16,7 +16,7 @@ ret=""
 
 while IFS=' ' read -r cpu user nice system idle iowait irq softirq steal guest guest_nice rest
 do
-    [[ "$cpu" =~ ^cpu ]] || continue
+    [[ "$cpu" =~ ^cpu ]] || break
 
     IFS=' ' read -r prevuser prevnice prevsystem previdle previowait previrq prevsoftirq prevsteal prevguest prevguest_nice rest <<< ${prevstat["$cpu"]}
 

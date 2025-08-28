@@ -239,7 +239,6 @@ const USER_DOWNLOAD_DIR = get_user_special_dir(UserDirectory.DIRECTORY_DOWNLOAD)
 const YTDLP_UPDATE_BASH_SCRIPT = SCRIPTS_DIR + "/update-yt-dlp.sh";
 const MPV_BITRATE_BASH_SCRIPT = SCRIPTS_DIR + "/mpvWatchBitrate.sh";
 const MPV_TITLE_BASH_SCRIPT = SCRIPTS_DIR + "/mpvWatchTitle.sh";
-const DEL_SONG_ARTS_SCRIPT = SCRIPTS_DIR + "/del_song_arts.sh";
 const MPV_LUA_SCRIPT = SCRIPTS_DIR + "/mpvWatchTitle.lua";
 const MPV_PID_FILE = RUNTIME_DIR + "/mpv_radio_PID";
 const MPV_SOCKET = RUNTIME_DIR + "/mpvradiosocket";
@@ -1362,12 +1361,36 @@ class WebRadioReceiverAndRecorder extends TextIconApplet {
     this.settings.bind("yt-progress-interval", "yt_interval");
     this.settings.bind("yt-cookies-from", "cookies_from");
 
+    // Restart after reloading:
+    this.settings.bind("restart-after-reloading", "restart_after_reloading");
+
     // Score:
     //~ this.settings.bind("score", "score");
 
     // Help TextViews:
     this.populate_help_textviews()
   }
+
+  del_song_arts() {
+      let paths = [XDG_RUNTIME_DIR+"/AlbumArt/song-art"];
+      for (let dir_path of paths) {
+        if (file_test(dir_path, FileTest.EXISTS)) {
+          let dir = file_new_for_path(dir_path);
+          let dir_children = dir.enumerate_children("standard::name,standard::type,standard::icon,time::modified", FileQueryInfoFlags.NONE, null);
+          var file = dir_children.next_file(null);
+          while (file != null) {
+            let name = file.get_name();
+            if (name.startsWith("R3SongArt")) {
+                let f = file_new_for_path(dir_path+"/"+name);
+                if (f.query_exists(null))
+                  f.delete(null);
+            }
+            file = dir_children.next_file(null);
+          }
+          dir_children.close(null);
+        }
+      }
+    }
 
   onAlarmClockChanged() {
     if (this.wake_me_up) {
@@ -1618,8 +1641,15 @@ class WebRadioReceiverAndRecorder extends TextIconApplet {
 
   }
 
+  rm_file(path) {
+    let file = file_new_for_path(path);
+    if (file.query_exists(null))
+      file.delete(null);
+  }
+
   on_next_event(event) {
-    spawnCommandLine("rm -f %s".format(R30NEXT));
+    //~ spawnCommandLine("rm -f %s".format(R30NEXT));
+    this.rm_file(R30NEXT);
     if (this.recentRadios.length < 2) return;
     let next_radio = this.recentRadios[this.recent_number - 1];
     this.stop_mpv_radio(false);
@@ -1627,7 +1657,8 @@ class WebRadioReceiverAndRecorder extends TextIconApplet {
   }
 
   on_previous_event(event) {
-    spawnCommandLine("rm -f %s".format(R30PREVIOUS));
+    //~ spawnCommandLine("rm -f %s".format(R30PREVIOUS));
+    this.rm_file(R30PREVIOUS);
     if (this.recentRadios.length < 2) return;
     let prev_radio = this.recentRadios[1];
     this.stop_mpv_radio(false);
@@ -3510,7 +3541,6 @@ class WebRadioReceiverAndRecorder extends TextIconApplet {
   }
 
   stop_mpv_radio(notify_user=true) {
-    //log("stop_mpv_radio");
     let pid = this.get_mpv_pid();
 
     if (!this.radioId || this.radioId.length === 0 || pid == null) return;
@@ -3531,8 +3561,10 @@ class WebRadioReceiverAndRecorder extends TextIconApplet {
     this.unmonitor_r30next();
 
     spawnCommandLine("kill -15 " + pid);
-    spawnCommandLine("rm -f %s %s %s %s".format(MPV_PID_FILE, MPV_SOCKET, MPV_BITRATE_FILE, MPV_CODEC_FILE));
-    spawnCommandLine("bash -c '%s'".format(DEL_SONG_ARTS_SCRIPT));
+    //~ spawnCommandLine("rm -f %s %s %s %s".format(MPV_PID_FILE, MPV_SOCKET, MPV_BITRATE_FILE, MPV_CODEC_FILE));
+    for (let p of [MPV_PID_FILE, MPV_SOCKET, MPV_BITRATE_FILE, MPV_CODEC_FILE])
+      this.rm_file(p);
+    this.del_song_arts();
     file_set_contents(MPV_TITLE_FILE, "");
 
     this.change_symbolic_icon();
@@ -3790,16 +3822,17 @@ class WebRadioReceiverAndRecorder extends TextIconApplet {
   }
 
   stop_mpv(notify_user=true) {
-    //log("stop_mpv");
     this.stop_mpv_radio(notify_user);
 
     this.unmonitor_interfaces();
 
-    spawnCommandLineAsync("rm -f %s %s %s %s".format(MPV_PID_FILE, MPV_SOCKET, MPV_BITRATE_FILE, MPV_CODEC_FILE));
-    spawnCommandLineAsync("rm -f %s".format(R30STOP));
-    spawnCommandLineAsync("rm -f %s".format(R30NEXT));
-    spawnCommandLineAsync("rm -f %s".format(R30PREVIOUS));
-    spawnCommandLineAsync("bash -c '%s'".format(DEL_SONG_ARTS_SCRIPT));
+    //~ spawnCommandLineAsync("rm -f %s %s %s %s".format(MPV_PID_FILE, MPV_SOCKET, MPV_BITRATE_FILE, MPV_CODEC_FILE));
+    //~ spawnCommandLineAsync("rm -f %s".format(R30STOP));
+    //~ spawnCommandLineAsync("rm -f %s".format(R30NEXT));
+    //~ spawnCommandLineAsync("rm -f %s".format(R30PREVIOUS));
+    for (let p of [MPV_PID_FILE, MPV_SOCKET, MPV_BITRATE_FILE, MPV_CODEC_FILE, R30STOP, R30NEXT, R30PREVIOUS])
+      this.rm_file(p);
+    this.del_song_arts();
   }
 
   on_applet_clicked(event) {
@@ -3955,20 +3988,20 @@ class WebRadioReceiverAndRecorder extends TextIconApplet {
    * only if the reload of the applet is requested.
    **/
   on_applet_reloaded() {
+    if (this.mpvStatus === "PLAY") {
+      this.restart_after_reloading = true;
+    }
+
     if (this.menu.isOpen) this.menu.close();
     if (this._applet_context_menu.isOpen) this._applet_context_menu.close();
-    //log("on_applet_reloaded", true);
     this.songTitle = "";
     // Register recent Radios:
     this.recentRadios = this.recentRadios;
 
-    //this.set_radio_hashtable();
-
-    this.get_radio_name(this.last_radio_listened_to)
+    this.get_radio_name(this.last_radio_listened_to);
   }
 
   _set_default_volume() {
-
     let volume_at_startup = this.get_volume_at_startup();
 
     if (volume_at_startup > -1) {
@@ -3987,11 +4020,9 @@ class WebRadioReceiverAndRecorder extends TextIconApplet {
 
   listen_to_last_station() {
     let id = this.last_radio_listened_to;
-
-    if (this.switch_on_last_station_at_start_up && id && id.length > 0) {
+    if ((this.switch_on_last_station_at_start_up || this.restart_after_reloading) && id && id.length > 0) {
       this.start_mpv_radio(id);
     }
-
     id = null;
   }
 
@@ -4017,7 +4048,7 @@ class WebRadioReceiverAndRecorder extends TextIconApplet {
     // Install or update translations, if any:
     if (!are_translations_installed()) install_translations();
 
-    spawnCommandLineAsync("bash -c '"+DEL_SONG_ARTS_SCRIPT+"'");
+    this.del_song_arts();
     spawnCommandLineAsync("bash -c '%s/fix-desklet-translations.sh'".format(SCRIPTS_DIR));
 
     let color;
@@ -4034,15 +4065,6 @@ class WebRadioReceiverAndRecorder extends TextIconApplet {
 
     this.change_symbolic_icon();
 
-    //~ let subProcess = spawnCommandLineAsyncIO(SCRIPTS_DIR+"/get-score.sh", Lang.bind(this, (stdout, err, exitCode) => {
-      //~ try {
-        //~ this.settings.setValue("score", 1*stdout);
-      //~ } catch(e) {
-        //~ logError("Reading score error: "+e)
-      //~ }
-      //~ subProcess.send_signal(9);
-    //~ }));
-
     // Check about dependencies:
     this.checkDepInterval = undefined;
     this.dependencies = null;
@@ -4056,8 +4078,6 @@ class WebRadioReceiverAndRecorder extends TextIconApplet {
         clearInterval(this.checkDepInterval);
         this.checkDepInterval = undefined;
       }
-
-
 
       this.songTitle = "";
       if (this.settings.getValue("reset-recents"))
@@ -4074,7 +4094,6 @@ class WebRadioReceiverAndRecorder extends TextIconApplet {
     }
 
     if (!this.ytdlp_updated) {
-      log("Updating yt-dlp.");
       this.checkYTDLPInterval = setInterval(
         () => {
           let subProcess2 = spawnCommandLineAsyncIO(
@@ -4123,6 +4142,8 @@ class WebRadioReceiverAndRecorder extends TextIconApplet {
 
     // Alarm Clock:
     this.onAlarmClockChanged();
+
+    this.restart_after_reloading = false;
   }
 
   on_applet_removed_from_panel() {
@@ -4412,7 +4433,6 @@ class WebRadioReceiverAndRecorder extends TextIconApplet {
 
   on_option_menu_reload_this_applet_clicked() {
     //log("on_option_menu_reload_this_applet_clicked");
-    this.stop_mpv(false);
     this._applet_context_menu.close();
     let to = setTimeout( () => {
         // Reload this applet

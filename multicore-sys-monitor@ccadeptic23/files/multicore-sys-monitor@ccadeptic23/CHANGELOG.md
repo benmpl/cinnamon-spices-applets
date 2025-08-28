@@ -1,3 +1,67 @@
+### v2.8.4~20250826
+  * Improves context menu to access to settings.
+  * Middle-click opens settings.
+
+### v2.8.3~20250826
+  * Fixes [#7559](https://github.com/linuxmint/cinnamon-spices-applets/issues/7559)
+
+
+### v2.8.2~20250825
+  * Try to fix [#7559](https://github.com/linuxmint/cinnamon-spices-applets/issues/7559)
+  * Improves the Disk Usage chart.
+
+### v2.8.1~20250825
+  * Disk usage: the user can set a maximum value (in %) for each defined path.
+  * When the value reaches this maximum, the alert color is used in the bar chart and this value is highlighted in bold in the tooltip.
+
+### v2.8.0~20250825
+  * From now, can display disk usage.
+  * Fixes [#7546](https://github.com/linuxmint/cinnamon-spices-applets/issues/7546)
+
+### v2.7.2~20250819
+  * Improved loops.
+  * Changed to_string method.
+  * Code cleanup.
+
+### v2.7.1~20250814
+  * Improved Graph Border options.
+
+### v2.7.0~20250814
+  * Added Border options.
+
+### v2.6.3~20250813
+  * Updated the `get-disk-info.sh` script.
+
+### v2.6.2~20250813
+  * New options for Swap in the Memory graph.
+
+### v2.6.1~20250813
+  * Improved memory measurement speed.
+
+### v2.6.0~20250813
+  * Improved processor measurement speed.
+
+### v2.5.2~20250811
+  * Speed improvement.
+
+### v2.5.1~20250810
+  * Adds the amounts of Buffer memory, Cache, and Shared memory to the tooltip.
+  * Improved tooltip display.
+
+### v2.5.0~20250809
+  * Fixes [#7460](https://github.com/linuxmint/cinnamon-spices-applets/issues/7460)
+  * Fixes [#7505](https://github.com/linuxmint/cinnamon-spices-applets/issues/7505)
+  * Calculates the percentage of memory used, as does `gnome-system-monitor`.
+  * No longer includes cache memory or buffer memory in the statistics.
+  * Improved calculation of tooltip width based on translations of displayed messages.
+
+### v2.4.0~20250808
+  * Improved memory calculation.
+  * Fixes [#7460](https://github.com/linuxmint/cinnamon-spices-applets/issues/7460)
+
+### v2.3.5~20250808
+  * Speed improvement.
+
 ### v2.3.4~20250806
   * Fixes [#7461](https://github.com/linuxmint/cinnamon-spices-applets/issues/7461)
   * From now on, you can choose to set the origin of the pie chart (Mem) at 12 o'clock.

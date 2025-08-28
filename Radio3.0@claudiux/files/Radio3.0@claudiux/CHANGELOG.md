@@ -1,3 +1,10 @@
+### v3.6.1~20250820
+  * Restarts listening to the current station when the applet is restarted (except when it is Cinnamon that is reloaded).
+
+### v3.6.0~20250808
+  * Improved speed.
+  * Code cleanup.
+
 ### v3.5.0~20250629
   * Add option: Ignore Youtube features.
 
